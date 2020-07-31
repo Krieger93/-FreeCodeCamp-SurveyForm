@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href=".\style.css">
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+</head>
+<body>
+	<div class="row">
+		<div class="container">
+			<header>
+				<h1 id="title" class="text-center title">FreeCodecamp Survey Form</h1>
+				<p id="description" class="description text-center">Responsive Web Design Projects - Build a Survey Form</p>
+			</header>
+		</div>
+	</div>
+	<div class="row">
+		<div class="container">
+			<form id="survey-form">
+				<div class="form-group">
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+				</div>
+				<div class="form-group">
+					<label for="Email" id="email-label">Email:</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Ex: hello@gmail.com" required>
+				</div>
+				<div class="form-group">
+					<label for="number" id="number-label">Age:</label>
+					<input type="number" name="age" min="10" max="99" id="number" class="form-control" placeholder="Enter your age" required>
+				</div>
+				<div class="form-group">
+					<p>¿Sweet mate?</p>
+					<select class="form-control" name="one" id="dropdown" required>
+						<option value="Select" selected disabled> Select </option>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+						<option value="Other">Other</option>
+						<option value="WhatAreYouTalkingAbout?!">WhatAreYouTalkingAbout?!</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p>Please select your gender:</p>
+  					<input type="radio" id="male" name="gender" value="male">
+  					<label for="male">Male</label><br>
+  					<input type="radio" id="female" name="gender" value="female">
+  					<label for="female">Female</label><br>
+  					<input type="radio" id="other" name="gender" value="other">
+  					<label for="other">Other</label>
+				</div>
+				<div class="form-group">
+					<p>Did you have a vehicle?:</p>
+					<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  					<label for="vehicle1"> I have a bike</label><br>
+  					<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  					<label for="vehicle2"> I have a car</label><br>
+  					<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  					<label for="vehicle3"> I have a boat</label><br><br>
+				</div>
+				<div class="form-group">
+					<label for="textarea">Comments:</label>
+					<textarea class="form-control" id="textarea" name="textarea" rows="4" cols="50">Comments...</textarea>
+				</div>
+				<div class="form-group">
+					<button class="form-control" id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
